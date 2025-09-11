@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: bakehouse
+    schema: bakehouse
+    catalog: samples
+    config:
+      freshness:
+        warn_after: {count: 99999, period: day}
+        error_after: {count: 99999, period: day}
+
+    tables:
+      - name: media_customer_reviews
+        description: customer reviews of cookies at different bakehouse locations
+      - name: media_gold_reviews_chunked
+      - name: sales_customers
+      - name: sales_franchises
+      - name: sales_suppliers
+      - name: sales_transactions
