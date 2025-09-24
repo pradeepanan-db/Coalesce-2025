@@ -41,6 +41,15 @@ vars:
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
+  Coalesce-2025:          
+    bronze:
+      +schema: bronze
+    silver:
+      +schema: silver
+    gold:
+      +schema: gold
+    example:
+      +schema: example
   +persist_docs:
     relation: true
     columns: true
