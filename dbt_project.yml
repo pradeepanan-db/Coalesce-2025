@@ -41,7 +41,7 @@ vars:
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  Coalesce-2025:          
+  Coalesce_2025:          
     bronze:
       +schema: bronze
     silver:
